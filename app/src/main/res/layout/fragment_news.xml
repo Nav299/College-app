@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsFragment">
+
+    <TextView
+        android:id="@+id/newsContentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="36dp"
+        android:text=""/>
+
+
+
+    <!-- Post News Button -->
+
+
+    <!-- Floating "+" Symbol for Investorl Activities -->
+    <ImageView
+        android:id="@+id/investorActivitiesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/baseline_person_add_24"
+        android:clickable="true"/>
+
+
+    <ImageView
+        android:id="@+id/postedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/postNewsButton"
+        android:layout_below="@id/newsContentTextView"
+        android:visibility="gone"/>
+
+    <!-- Description EditText -->
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your description"
+        android:layout_above="@+id/postNewsButton"
+        android:layout_margin="16dp"/>
+
+    <!-- Post News Button -->
+    <Button
+        android:id="@+id/postNewsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Post News"/>
+
+    <!-- Share, Download, Comment Buttons (Add appropriate icons) -->
+
+    <LinearLayout
+        android:id="@+id/postsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/postNewsButton"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- This is where individual post items will be added dynamically -->
+    </LinearLayout>
+
+</RelativeLayout>

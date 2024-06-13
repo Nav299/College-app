@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU ARE :"
+        android:layout_above="@id/staff_login_button"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+
+    <Button
+        android:id="@+id/staff_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/s"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="42dp"
+        android:text="Staff" />
+
+    <TextView
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/student_login_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="30dp"
+        android:text="OR"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/student_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:text="Student "
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="541dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/showRatingDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="1dp"
+        android:text="Show Rating Dialog" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/complimentFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/u"
+        />
+
+
+
+</RelativeLayout>

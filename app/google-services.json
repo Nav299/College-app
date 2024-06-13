@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "723846693986",
+    "firebase_url": "https://kgrcet-377a9-default-rtdb.firebaseio.com",
+    "project_id": "kgrcet-377a9",
+    "storage_bucket": "kgrcet-377a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723846693986:android:289d3a13b17fff6817bd3b",
+        "android_client_info": {
+          "package_name": "com.example.kgrcet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG6fG1XPNXrFmg60BUGfirsb1z-wyUW-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

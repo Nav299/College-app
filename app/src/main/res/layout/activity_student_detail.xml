@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kgc"
+    tools:context=".StudentDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="#082DFD"
+        android:id="@+id/toolbar3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KGRCET "
+                android:textSize="20sp"
+                android:id="@+id/myapptext"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/doctorImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="129dp"
+        android:src="@drawable/n" />
+
+    <TextView
+        android:id="@+id/doctorNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doctorImageView"
+        android:layout_alignEnd="@+id/doctorImageView"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="40dp"
+        android:text="Doctor Name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/doctorSpecialtyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doctorNameTextView"
+        android:layout_alignEnd="@+id/doctorNameTextView"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="13dp"
+        android:text="Specialty"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/viewCertificatesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Certificates"
+        android:layout_below="@id/doctorSpecialtyTextView"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/viewAttendencesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_below="@id/doctorSpecialtyTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="26dp"
+        android:layout_toEndOf="@+id/viewCertificatesButton"
+        android:text="View Attendence" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View My performance"
+        android:layout_below="@id/viewCertificatesButton"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/viewB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_below="@id/viewAttendencesButton"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/viewCertificatesButton"
+        android:layout_marginLeft="26dp"
+        android:text="View My grade" />
+
+    <Button
+        android:id="@+id/viewlabsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Labs topic"
+        android:layout_below="@id/viewButton"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/viewclubsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_below="@id/viewB"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="26dp"
+        android:layout_toEndOf="@+id/viewCertificatesButton"
+        android:text="View Clubs" />
+
+    <Button
+        android:id="@+id/viewlessonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Lesson topic"
+        android:layout_below="@id/viewlabsButton"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/viewsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_below="@id/viewclubsButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="26dp"
+        android:layout_toEndOf="@+id/viewCertificatesButton"
+        android:text="View More" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kgc"
+    tools:context=".Homepage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="#0D7DED"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KGRCET "
+                android:textSize="20sp"
+                android:id="@+id/myapptext"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's News" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected \n Student" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staff" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_About"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us" />
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</RelativeLayout>
